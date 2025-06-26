@@ -13,6 +13,8 @@ $$Q(s,a)=Q(s,a)+\alpha [r+\gamma *max Q(s',a')-Q(s,a)]$$
 ## Policy gradient
 面试常见问题：
 - 策略梯度的目标函数？（V的期望）
-- V函数的定义？
+- V函数的定义？（对Q值在当前策略下的期望）
 $$ \sum_{a} \pi_\theta (a|s) Q(s,a) $$
-- 
+- Q和V如何转换？（v的定义、Q=R+γ$\sum$P*v）
+- PG为什么是on-policy的？（目标函数是对πθ的期望，必须用当前的去计算梯度，对应reinforce算法）
+
