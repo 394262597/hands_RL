@@ -13,4 +13,6 @@ $$Q(s,a)=Q(s,a)+\alpha [r+\gamma *max Q(s',a')-Q(s,a)]$$
 ## Policy gradient
 面试常见问题：
 - 策略梯度的目标函数？（V的期望）
+- V函数的定义？
+$$ \sum_{a} \pi_\theta (a|s) Q(s,a) $$
 - 
